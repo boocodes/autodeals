@@ -32,9 +32,13 @@ const ExternalWrapper = styled.div`
     @media(max-width: 850px){
         margin-top: 60px;
     }
-    @media(max-width: 510px){
-        margin-top: 50px;
+    @media(max-width: 1024px){
+        margin-top: 40px;
     }
+    @media(max-width: 540px){
+        margin-top: 0px;
+    }
+    
 `
 
 const OfferTitle = styled.h1`
@@ -54,9 +58,13 @@ const OfferTitle = styled.h1`
     @media(max-width: 540px){
         margin-bottom: 10px;
     }
+    @media(max-width: 540px){
+        font-size: 48px;
+        width: 400px;
+    }
     @media(max-width: 510px){
         font-size: 34px;
-        width: 300px;
+        width: 280px;
     }
 `
 const OfferSubTitle = styled.h3`
@@ -68,8 +76,11 @@ const OfferSubTitle = styled.h3`
     @media(max-width: 1200px){
         font-size: 24px;
     }
+    @media(max-width: 540px){
+        font-size: 32px;
+    }
     @media(max-width: 510px){
-        font-size: 20px;
+        font-size: 20px;   
     }
 `
 

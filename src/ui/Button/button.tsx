@@ -30,23 +30,27 @@ const Root = styled.button`
         font-size: 20px;
     }    
     @media(max-width: 1440px){
-        padding: 20px 0px;
-        border-radius: 16px;
+        padding: 15px 0px;
+        border-radius: 8px;
     }
-    @media(max-width: 1200px){
-        padding: 14px 0px;
-        font-size: 14px;
-        border-radius: 14px;
+    // @media(max-width: 1200px){
+    //     padding: 14px 0px;
+    //     font-size: 14px;
+    //     border-radius: 14px;
+    // }
+    @media(max-width: 1024px){
+        font-size: 16px;
+        padding: 18px 0px;
     }
-    @media(max-width: 850px){
-        font-size: 18px;
-        padding: 12px 0px;
-        border-radius: 12px;
+    
+    @media(max-width: 540px){
+        font-size: 16px;
+        padding: 15px 0px;
     }
     @media(max-width: 510px){
         font-size: 14px;
-        padding: 14px 0px;
-        
+        padding: 12px 0px;
+        border-radius: 8px;
     }
 `
 

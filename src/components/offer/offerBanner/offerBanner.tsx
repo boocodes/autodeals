@@ -38,7 +38,7 @@ const ExternalWrapper = styled.div`
     color: white;
     border-radius: 20px;
     backdrop-filter: blur(2px);
-    margin-top: 67px;
+    margin-top: 50px;
     @media(max-width: 1700px){
         margin-top: 50px;
     }
@@ -54,13 +54,25 @@ const ExternalWrapper = styled.div`
         width: 100%;
         margin-top: 45px;
     }
-    
+    @media(max-width: 540px){
+        padding: 20px;
+    }
+    @media(max-width: 510px){
+        padding: 15px;
+        width: 290px;
+        border-radius: 16px;
+    }
     @media(max-width: 460px){
         margin-top: 20px;
         padding: 20px 25px 18px 25px;
     }
+    @media(max-width: 400px){
+        width: 100%;
+        padding: 12px;
+    }
     @media(max-width: 360px){
         margin-top: 20px;
+        
         padding: 18px 12px 18px 12px;
     }
 `
@@ -82,15 +94,20 @@ const TitleText = styled.p`
         width: 320px;
     }
     @media(max-width: 540px){
-        
+        font-size: 40px;
+        width: 440px;
     }
     @media(max-width: 510px){
         font-size: 22px;
+        width: 245px;
+    }
+    @media(max-width: 370px){
+        width: 100%;
     }
 `
 const ElemList = styled.ul`
     list-style-type: decimal;
-    margin: 25px 0px 16px 25px;
+    margin: 25px 0px 24px 25px;
     @media(max-width: 1440px){
         margin: 25px 0px 20px 30px;
     }
@@ -100,9 +117,13 @@ const ElemList = styled.ul`
     @media(max-width: 850px){
         margin: 20px 0px 20px 25px;
     }
-    @media(max-width: 510px){
-        margin: 16px 0px 16px 25px;
+    @media(max-width: 540px){
+        margin: 20px 0px 20px 40px;
     }
+    @media(max-width: 510px){
+        margin: 16px 0px 16px 20px;
+    }
+    
     
     
 `
@@ -127,10 +148,13 @@ const Elem = styled.li`
         width: 365px;
     }
     @media(max-width: 540px){
-        width: 100%;
+        width: 95%;
+        font-size: 24px;
+        margin-bottom: 15px;
     }
     @media(max-width: 510px){
         font-size: 14px;
+        width: 100%;
     }
 `
 const ContactButtonWrapper = styled.div`

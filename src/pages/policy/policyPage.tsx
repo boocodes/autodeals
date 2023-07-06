@@ -60,15 +60,15 @@ function PolicyPage ({}:Props){
                         </ThirdSizeTypeText>
                         <ParagraphOptionsList>
                             <ParagraphOptionElem>полное имя;</ParagraphOptionElem>
-                            <ParagraphOptionElem>адрес электронной почты;</ParagraphOptionElem>
-                            <ParagraphOptionElem>номер мобильного телефона;</ParagraphOptionElem>
+                            <ParagraphOptionElem>адрес электронной почты</ParagraphOptionElem>
+                            <ParagraphOptionElem>номер мобильного телефона</ParagraphOptionElem>
                         </ParagraphOptionsList>
                     </ParagraphWrapper>
                     <ParagraphWrapper>
                         <SecondSizeTypeText>2. Цели обработки персональных данных</SecondSizeTypeText>
                         <ThirdSizeTypeText>1. 2.1. Оператор ФЕРМА обрабатывает персональные данные пользователей с целью:</ThirdSizeTypeText>
                         <ParagraphOptionsList>
-                            <ParagraphOptionElem>предоставления услуг;</ParagraphOptionElem>
+                            <ParagraphOptionElem>предоставления услуг</ParagraphOptionElem>
                         </ParagraphOptionsList>
                     </ParagraphWrapper>
                     <ParagraphWrapper>
@@ -77,7 +77,7 @@ function PolicyPage ({}:Props){
                         <ThirdSizeTypeText>2. в следующих случаях:</ThirdSizeTypeText>
                         <ParagraphOptionsList>
                             <ParagraphOptionElem>если передача персональных данных необходима для услуги;</ParagraphOptionElem>
-                            <ParagraphOptionElem>если пользователь дал согласие на осуществление передачи своих данных третьей стороне;</ParagraphOptionElem>
+                            <ParagraphOptionElem>если пользователь дал согласие на осуществление передачи своих данных третьей стороне</ParagraphOptionElem>
                         </ParagraphOptionsList>
                     </ParagraphWrapper>
                     <ParagraphWrapper>
@@ -203,7 +203,9 @@ const ParagraphOptionElem = styled.li`
     }
     @media(max-width: 520px){
         font-size: 9px;
-       
+        &:before{
+            font-size: 20px;
+        }
     }
     
 `

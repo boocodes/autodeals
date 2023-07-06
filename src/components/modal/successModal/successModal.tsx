@@ -42,7 +42,6 @@ function SuccessModal({changeModalSuccessFlag, changeModalFlag}:Props){
 
 const ExternalWrapper = styled.div`
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
     padding: 40px 30px;

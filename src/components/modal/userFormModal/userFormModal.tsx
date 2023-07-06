@@ -112,11 +112,11 @@ function UserFormModal({changeModalSuccessFlag, changeModalFlag}:Props){
 
 const ExternalWrapper = styled.div`
     position: absolute;
-    top:50%;
+    
     left:50%;
     transform:translate(-50%, 50%);
     padding: 38px 28px;
-    border-radius: 20px;
+    border-radius: 16px;
     background-color: white;
     z-index: 5;
     font-family: 'Muller';
@@ -184,7 +184,7 @@ const UsernameInput = styled.input<IUsernameInput>`
     outline: none;
     font-size: 20px;
     font-weight: 400;
-    padding: 20px 0px 20px 32px;
+    padding: 16px 0px 16px 30px;
     position: relative;
     width: 100%;
     border: 1px solid ${props => props.usernameInputErrorFlag ? "red" : "black"};
@@ -204,7 +204,7 @@ const PhoneNumberInput = styled(InputMask)`
     font-weight: 400;
     position: relative;
     width: 100%;
-    padding: 20px 0px 20px 32px;
+    padding: 16px 0px 16px 30px;
     @media(max-width: 480px){
         font-size: 16px;
     }
@@ -213,14 +213,14 @@ const PhoneNumberInput = styled(InputMask)`
     }
 `
 const ActiveSubmitFormInput = styled.input`
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 500;
     background-color: #1E1F24;
     border: none;
     border-radius: 8px;
     color: white;
     cursor: pointer;
-    padding: 20px;
+    
     position: relative;
     width: 100%;
     @media(max-width: 480px){
@@ -229,7 +229,7 @@ const ActiveSubmitFormInput = styled.input`
     @media(max-width: 360px){
         font-size: 16px;
     }
-    height: 62px;
+    height: 52px;
 `
 
 const UsernameInputHelpWindow = styled.div`

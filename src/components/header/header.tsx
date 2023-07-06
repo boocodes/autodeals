@@ -55,7 +55,12 @@ function Header({changeModalFlag, windowWidth, backgroundColor}:Props){
         <ExternalWrapper backgroundColor={backgroundColor}>
             <LogoWrapper>
                 <Link to={"/"}>
-                    <LogoImage src={"./images/fermaLogo.svg"}/>
+                    {
+                        windowWidth > 370 ?
+                            <LogoImage src={"./images/fermaLogo.svg"}/>
+                            :
+                            <LogoImage src={"./images/shortFermaLogo.svg"}/>
+                    }
                 </Link>
             </LogoWrapper>
             <ContactWrapper>
@@ -121,10 +126,10 @@ const ExternalWrapper = styled.div<IExternalWrapper>`
         padding: 40px 60px;
     }
     @media(max-width: 850px){
-        padding: 31px;
+        padding: 60px 30px 60px 30px;
     }
     @media(max-width: 510px){
-        padding: 20px 10px;
+        padding: 40px 20px 40px 20px;
     }
 `
 
@@ -140,8 +145,8 @@ const LogoImage = styled.img`
     @media(max-width: 430px){
         width: 140px;
     }
-    @media(max-width: 340px){
-        width: 120px;
+    @media(max-width: 370px){
+        width: 97px;
     }
 `
 
@@ -170,6 +175,7 @@ const WorkGraphicWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 16px;
+    
 `
 const WorkGraphicDaysWrapper = styled.div`
 
@@ -180,6 +186,8 @@ const WorkGraphicDaysText = styled.p`
     @media(max-width: 1200px){
         font-size: 16px;
     }
+    line-height: 0.8;
+  
 `
 
 const WorkGraphicHoursWrapper = styled.div`
@@ -207,14 +215,17 @@ const ContactButtonWrapper = styled.div`
     margin-left: 55px;
     width: 262px;
     color: black;
-    @media(max-width: 1700px){
-        width: 241px;
+    @media(max-width: 1024px){
+        width: 221px;
     }
     @media(max-width: 850px){
         margin-left: 0px;
     }
     @media(max-width: 510px){
-        width: 165px;
+        width: 173px;
+    }
+    @media(max-width: 350px){
+        width: 170px;
     }
 `
 
